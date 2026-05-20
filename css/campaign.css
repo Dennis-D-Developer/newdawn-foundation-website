@@ -1,0 +1,186 @@
+/* CAMPAIGN CSS STYLESHEET */
+/* Header Section */
+/* Hero Section */
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-section.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  max-height: 300px;
+  justify-content: center;
+  padding: var(--spacing-sm);
+  position: relative;
+  transition: var(--transition);
+}
+.hero-section h2 {
+  background-color: transparent;
+  color: var(--primary-color);
+  font: 700 30px var(--secondary-font);
+  padding: 0;
+}
+.hero-links {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.hero-links a {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  font: 500 15px var(--primary-font);
+  outline: none;
+  text-decoration: none;
+}
+.period {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  border: none;
+  height: 6px;
+  width: 6px;
+}
+.hero-links p {
+  background-color: transparent;
+  color: var(--secondary-text-color);
+  font: 500 15px var(--primary-font);
+  padding: 0;
+}
+
+/* Campaign Section */
+.campaign_container {
+  margin-top: var(--spacing-xl);
+}
+.campaign_cards {
+  display: grid;
+  gap: var(--spacing-sm);
+  grid-template-columns: 1fr;
+  transition: var(--transition);
+}
+.card_item {
+  border-radius: 5px;
+  border: 2px solid var(--border-color);
+  transition: var(--transition);
+}
+.card_item:hover .card-overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: 1;
+}
+
+/* Campaign Pagination */
+.pagination {
+  margin: var(--spacing-lg);
+}
+.pagination a {
+  border-radius: 5px;
+  border: 2px solid gainsboro;
+  color: var(--primary-text-color);
+  font: 500 17px var(--primary-font);
+  padding: var(--spacing-sm);
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.pagination .active,
+.pagination a:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+/* Campaign Impact */
+.campaign-impact {
+  background-color: var(--secondary-bgcolor);
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: 1fr;
+  padding: var(--spacing-md) var(--spacing-sm);
+  transition: var(--transition);
+}
+.impact-content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  transition: var(--transition);
+}
+.impact-content h3 {
+  color: var(--primary-color);
+  font: 700 20px var(--secondary-font);
+  text-transform: uppercase;
+}
+.impact-content p {
+  color: var(--primary-text-color);
+  font: normal 15px var(--primary-font);
+}
+.impact-content ul {
+  font: normal 15px var(--primary-font);
+  list-style: circle;
+  padding: 0 var(--spacing-sm);
+}
+.impact-donate-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  display: inline-block;
+  font: 600 15px var(--secondary-font);
+  outline: none;
+  justify-self: start;
+  padding: var(--spacing-sm);
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: 
+      background-color 0.5s ease-in-out, 
+      border-color 0.5s ease-in-out,
+      color 0.5s ease-in-out;
+  width: auto !important;
+}
+.impact-donate-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/* Media query for responsive design */
+@media screen and (min-width: 600px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  .campaign-impact {
+    padding: var(--spacing-md);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+  .campaign-impact {
+    padding: var(--spacing-lg);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-xl);
+  }
+  .campaign_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .campaign-impact {
+    padding: var(--spacing-xl);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .campaign_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

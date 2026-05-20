@@ -1,0 +1,229 @@
+/* VOLUNTEER CSS STYLESHEET */
+/* Header Section */
+/* Hero Section */
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-section.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  max-height: 300px;
+  justify-content: center;
+  padding: var(--spacing-sm);
+  position: relative;
+  transition: var(--transition);
+}
+.hero-section h2 {
+  background-color: transparent;
+  color: var(--primary-color);
+  font: 700 30px var(--secondary-font);
+  padding: 0;
+}
+.hero-links {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.hero-links a {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  font: 500 15px var(--primary-font);
+  outline: none;
+  text-decoration: none;
+}
+.period {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  border: none;
+  height: 6px;
+  width: 6px;
+}
+.hero-links p {
+  background-color: transparent;
+  color: var(--secondary-text-color);
+  font: 500 15px var(--primary-font);
+  padding: 0;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: 1fr;
+  padding: var(--spacing-xl) var(--spacing-sm);
+  transition: var(--transition);
+}
+.volunteer-section img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+.volunteer-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-md);
+  transition: var(--transition);
+}
+.volunteer-info h3 {
+  color: var(--primary-color);
+  font: 600 25px var(--secondary-font);
+  text-transform: uppercase;
+}
+.volunteer-info p {
+  color: var(--primary-text-color);
+  font: normal 15px var(--primary-font);
+  line-height: var(--line-height);
+}
+
+/* Volunteer Contact Form Section */
+.volunteer-form__section {
+  padding: var(--spacing-xl) var(--spacing-sm);
+}
+.volunteer-form__section h3 {
+  color: var(--primary-text-color);
+  font: 600 25px var(--secondary-font);
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+  text-transform: uppercase;
+}
+.volunteer-form__section h3 span {
+  color: var(--primary-color);
+}
+.line {
+  background-color: var(--alt-bgcolor);
+  border-radius: 5px;
+  height: 3px;
+  margin: 0 auto var(--spacing-lg);
+  width: 50px;
+}
+.volunteer-form {
+  width: 100%;
+}
+.form-input__group {
+  display: grid;
+  gap: var(--spacing-sm);
+  grid-template-columns: 1fr;
+  transition: var(--transition);
+  margin-bottom: var(--spacing-md);
+}
+.volunteer-form input,
+.volunteer-form select,
+.volunteer-form textarea {
+  border: 1px solid var(--border-color);
+  display: block;
+  font: normal 15px var(--primary-font);
+  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  width: 100%;
+}
+.volunteer-form select {
+  margin-bottom: 0;
+}
+.volunteer-form textarea {
+  height: 200px;
+  margin-bottom: 0;
+}
+:focus {
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+.volunteer-btn {
+  align-content: center;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: 2px dotted var(--primary-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  display: inline-block;
+  font: 500 15px var(--secondary-font);
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--spacing-sm) var(--spacing-md);
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition);
+  width: auto !important;
+}
+.volunteer-btn::before {
+  background-color: var(--bg-color);
+  content: "";
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateX(0);
+  transition: var(--transition);
+  width: 100%;
+  z-index: 0;
+}
+.volunteer-btn:hover::before {
+  transform: translateX(-100%);
+}
+.volunteer-btn span {
+  position: relative;
+  transition: var(--transition);
+  z-index: 1;
+}
+.volunteer-btn:hover span {
+  color: var(--primary-color);
+}
+
+
+
+/* Media query for responsive design */
+@media screen and (min-width: 600px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  :is(.volunteer-section, .volunteer-form__section) {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+  :is(.volunteer-section, .volunteer-form__section) {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+  .form-input__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-section {
+    padding: var(--spacing-sm) var(--spacing-xl);
+  }
+  .volunteer-section {
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--spacing-xl);
+  }
+  .volunteer-section img {
+    align-self: center;
+    justify-self: center;
+    order: 1;
+  }
+  .volunteer-form__section {
+    padding: var(--spacing-xl);
+  }
+  .first-group {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    transition: var(--transition);
+  }
+  :is(.input1, .input2, .input4, .input5, .input6, .input7) {
+    grid-column: span 2;
+  }
+  .input3 {
+    grid-column: span 4;
+  }
+}

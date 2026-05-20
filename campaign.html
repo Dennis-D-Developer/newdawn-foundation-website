@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NewDawn Charity Foundation empowers communities through education, healthcare, and humanitarian aid, providing relief for natural disasters and war-affected regions.">
+  <meta name="author" content="Dennis Uka">
+  <title>NewDawn Charity Foundation</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/campaign.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!--Page Transition Loader-->
+  <div class="page-loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!--Top Bar: Displays welcome message and social media links-->
+  <section class="top-bar">
+    <div class="top-bar__welcome">
+      Welcome to <span>NewDawn Charity Foundation!</span>
+    </div>
+    <div class="top-bar__socials">
+      <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="Linkedin">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+    </div>
+  </section>
+
+  <!--Header Section: Contains the logo, navigation links, call-to-action button, and hero content-->
+  <header class="header-section">
+     <section class="brand-contact">
+      <div class="brand-contact__logo">
+        <img src="img/project-logo.png" alt="NewDawn Charity Foundation Logo" loading="lazy" width="80" height="80">
+        <p class="logo-text">
+          newdawn<br>
+          <span>charity foundation</span>
+        </p>
+      </div>
+
+      <div class="brand-contact__info">
+        <div class="brand-icon">
+          <div class="icon-img">
+            <img src="img/email-icon.png" alt="Email Icon" loading="lazy" width="32" height="32">
+          </div>
+          <div class="brand-icon__text">
+            <p>EMAIL:</p>
+            <a href="mailto:support@newdawn.ng">support@newdawn.ng</a>
+          </div>
+        </div>
+
+        <div class="brand-icon">
+          <div class="icon-img">
+            <img src="img/telephone-icon.png" alt="Telephone Icon" width="32" height="32" loading="lazy">
+          </div>
+          <div class="brand-icon__text">
+            <p>CALL US NOW:</p>
+            <a href="tel:+2348034456778">
+              0803-445-6778
+            </a>
+          </div>
+        </div>
+
+        <!--Call-to-Action Button-->
+        <button type="button" class="cta-button donate-btn">
+          <span>
+            donate now
+          </span>
+        </button>
+        <!-- <a href="donate.html" class="cta-button" role="button">
+          <span>
+            donate now
+          </span>
+        </a> -->
+      </div>
+     </section>    
+
+     <nav class="nav-section">
+      <div class="nav-section__container">
+
+        <!--Mobile Device-->
+        <div class="nav__mobile">
+          <div class="nav-mobile__logo">
+            <img src="img/project-logo.png" alt="NewDawn Charity Foundation Logo" loading="lazy" width="80" height="80">
+            <p class="nav-logo__text">
+              newdawn<br>
+              <span>charity foundation</span>
+            </p>
+          </div>
+
+          <button type="button" class="nav__toggle" aria-label="Hamburger Menu" aria-expanded="false"
+          aria-controls="navLinks">
+            <img src="img/menu-icon.png" alt="Hamburger Menu Icon" loading="lazy" width="50" height="50" class="menu-icon">
+          </button>
+        </div>
+
+        <!--Links-->
+        <ul class="nav__links" id="navLinks">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#"  class="active">Campaigns</a>
+          </li>
+          <li>
+            <a href="event.html">Events</a>
+          </li>
+          <li>
+            <a href="volunteer.html">Volunteer</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+     </nav>
+
+     <section class="hero-section">
+      <h2>
+        Campaign
+      </h2>
+      <div class="hero-links">
+        <a href="index.html">Home</a>
+        <div class="period"></div>
+        <p>Campaign</p>
+      </div>
+     </section>
+  </header>
+
+  <!-- Main Section: Core page content -->
+  <main class="main-section">
+    <!--Campaign Section: Showcasing global campaigns, funds raised, and target goals-->
+    <section class="campaign-section">
+      <h3>
+        we need your help
+      </h3>
+      <div class="line"></div>
+      <h4>
+        global crises. urgent action needed
+      </h4>
+      <p>From natural disasters to devasting wars and hunger crises,</p>
+      <p>millions of lives are at risk. Your support brings hope and relief.</p>
+
+      <div class="campaign_container">
+        <div class="campaign_cards">
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Mozambique.jfif" alt="Mozambique Flood" loading="lazy" width="734" height="415" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>africa</h5>
+                <h6>mozambique flood</h6>
+                <p>
+                  Severe floods displaced hundreds of thousands and ruined farmland.
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="80">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>9,600</span></p>
+                  <p>Goal:<span>$12,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Syria.jfif" alt="Syria Food Crisis" loading="lazy" width="620" height="349" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>asia</h5>
+                <h6>Syria Food Crisis</h6>
+                <p>
+                  Millions struggling with hunger due to war and economic collapse.
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="87">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>$13,050</span></p>
+                  <p>Goal:<span>$15,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Russian-Ukraine.jfif" alt="Russia–Ukraine War" loading="lazy" width="735" height="493" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>europe</h5>
+                <h6>Russia–Ukraine War</h6>
+                <p>
+                  Disrupted global grain supply (both countries are major exporters).
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="78">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>$19,500</span></p>
+                  <p>Goal:<span>$25,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Haiti.jfif" alt="Haiti Hunger Crisis" loading="lazy" width="736" height="333" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>north america</h5>
+                <h6>Haiti Hunger Crisis</h6>
+                <p>
+                  Driven by violence, poverty, and ongoing political instability.
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="90">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>$13,500</span></p>
+                  <p>Goal:<span>$15,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Nigeria.jfif" alt="Nigeria Food Insecurity Crises" loading="lazy" width="736" height="529" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>africa</h5>
+                <h6>Nigeria Insecurity Crises</h6>
+                <p>
+                  20+ million Nigerians face hunger from inflation and insecurity.
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="82">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>$14,760</span></p>
+                  <p>Goal:<span>$18,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card-overlay__content">
+              <img src="img/Iran.jfif" alt="Iran-related Middle East tensions" loading="lazy" width="736" height="414" class="card-image">
+              <div class="card-overlay">
+                <button type="button" class="card-btn donate-btn">
+                  <span>
+                    donate now
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h5>asia</h5>
+                <h6>Iran Regional Conflict</h6>
+                <p>
+                  Affects oil, fertilizer, and global food supply chains, trade, pricing, and stability.
+                </p>
+              </div>
+              <div class="card-progress">
+                <div class="progress-container">
+                <div class="progress-bar" data-percent="75">
+                  <span class="progress-label">0</span>
+                </div>
+                </div>
+                <div class="progress-info">
+                  <p>Raised:<span>$15,000</span></p>
+                  <p>Goal:<span>$20,000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="pagination">
+          <a href="#">&lt;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">&gt;</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Why It Matters Section: Highlights the global child crisis, key statistics, and urgency across our campaign regions -->
+    <section class="campaign-impact">
+      <div class="impact-content">
+        <h3>
+          Why Should You Care?
+        </h3>
+        <p>
+          Every day, thousands of children around the world face a reality they did not choose.
+        </p>
+        <ul>
+          <li>
+            Over 3,600 children under the age of 5 die every single day from preventable causes.
+          </li>
+          <li>
+            Undernutrition remains one of the leading killers, responsible for nearly half of these deaths.
+          </li>
+          <li>
+            The most fragile time is the first month of life. More than half of child deaths happen within the first 28 days.
+          </li>
+          <li>
+            Millions of children are growing up stunted, underdeveloped, and without access to proper nutrition.
+          </li>
+          <li>
+            Education is slipping out of reach. Millions of children are out of school, while many who attend struggle with basic reading and math.
+          </li>
+        </ul>
+        <p>
+          This isn’t just one country’s crisis, it’s global. From Mozambique to Nigeria, Syria to Sudan, Kenya to Haiti, and even regions affected by the Russia–Ukraine conflict and Iran, children are facing hunger, displacement, and lost futures. At <strong>NewDawn Charity Foundation</strong>, we work every day to change these outcomes, to give children a chance not just to survive, but to thrive.
+        </p>
+      </div>
+
+      <div class="impact-content">
+        <h3>
+          How You Can Help
+        </h3>
+        <p>
+          Change doesn’t require millions, it starts with one decision. By contributing even a small portion of your income, you can:
+        </p>
+        <ul>
+          <li>
+            Provide life-saving nutrition and healthcare.
+          </li>
+          <li>
+            Support education for out-of-school children.
+          </li>
+          <li>
+            Deliver emergency relief in crisis regions.
+          </li>
+          <li>
+            Help rebuild futures in communities affected by conflict and disaster.
+          </li>
+        </ul>
+        <p>
+          As part of our commitment to transparency, you’ll receive:
+        </p>
+        <ul>
+          <li>
+            Regular updates on the impact you’re making.
+          </li>
+          <li>
+            A clear view of how your support is transforming lives.
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="impact-donate-btn donate-btn">
+        <span>
+          save a child today
+        </span>
+      </button>
+    </section>
+  </main>
+
+  <!--Footer Section: Contains site links, contact info, social media, and copyright information-->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="item-box">
+        <div class="footer-logo">
+          <img src="img/project-logo.png" alt="NewDawn Charity Foundation Logo" loading="lazy" width="80" height="80">
+          <p class="footer-logo__text">
+            newdawn<br>
+            <span>charity foundation</span>
+          </p>
+        </div>
+        <p class="item-text">
+          NewDawn Charity Foundation empowers communities through education, healthcare, and humanitarian aid, providing relief for natural disasters and war-affected regions.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-box">
+        <h5>
+          recent posts
+        </h5>
+        <div class="border-line"></div>
+
+        <div class="footer-blog">
+          <img src="img/footer-image.jfif" alt="Recent Post" loading="lazy" width="735" height="490">
+          <div class="footer-blog__text">
+            <h6>
+              <a href="blog.html">
+                Hope Through Every Smile
+              </a>
+            </h6>
+            <p>
+              27 March 2026
+            </p>
+          </div>
+        </div>
+        <div class="footer-blog">
+          <img src="img/footer-img.jfif" alt="Recent Post" loading="lazy" width="736" height="486">
+          <div class="footer-blog__text">
+            <h6>
+              <a href="blog.html">
+                Volunteers Making a Difference
+              </a>
+            </h6>
+            <p>
+              15 April 2026
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-box grid-box">
+        <h5>
+          Contact Us
+        </h5>
+        <div class="border-line"></div>
+
+        <div class="footer-contact-info">
+          <p>
+            <span>
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </span>
+            12 Hope Crescent, Ikeja, Lagos, Nigeria
+          </p>
+          <p>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            Call Us Now: <a href="tel:09098765432">0909-876-5432</a>
+          </p>
+          <p>
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            Email: <a href="mailto:info@newdawncharity.org">info@newdawncharity.org</a>
+          </p>
+          <form action="./action.page_php" method="post" class="footer-form">
+            <input type="email" name="email" placeholder="Your Email" class="email-input" required>
+          <button type="submit" class="footer-btn">
+            <span>
+              submit
+            </span>
+          </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <p class="copyright">
+      &copy; 2026 NewDawn Charity Foundation. All rights reserved. Created by <span>denko.dev</span>
+    </p>
+  </footer>
+
+  <!--Global Donation Modal-->
+  <section class="modal-section" id="donationModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>
+          make a donation
+        </h5>
+        <img src="img/close.png" alt="Close Button" id="closeModal" loading="lazy" width="20" height="20">
+      </div>
+      <form action="./action_page.php" method="post" class="modal-form">
+        <div class="donor-info">
+          <h3>
+            donor information
+          </h3>
+          <div class="donor-info__input">
+            <input type="text" name="name" placeholder="Your Name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+            <input type="tel" name="phone-number" placeholder="Phone Number*" required>
+            <input type="text" name="address" placeholder="Address*" required>
+            <input type="text" name="country" placeholder="Country*" required>
+            <input type="text" name="city" placeholder="City*" required>
+            <input type="text" name="province" placeholder="Province*" required>
+            <input type="text" name="postal-code" placeholder="Postal Code*" required>
+          </div>
+          <div class="amount">
+            <button type="button" class="amount-btn" data-amount="10">$10</button>
+            <button type="button" class="amount-btn" data-amount="20">$20</button>
+            <button type="button" class="amount-btn" data-amount="50">$50</button>
+            <button type="button" class="amount-btn" data-amount="100">$100</button>
+            <input type="text" name="amount" placeholder="Enter Your Amount">
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-header">
+              donate for
+            </div>
+            <div class="checkbox-input">
+              <label for="education" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="education" value="Youth Education">
+                <span class="checkmark"></span>
+                Youth Education
+              </label>
+              <label for="medical" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="medical" value="Medical Care">
+                <span class="checkmark"></span>
+                Medical Care
+              </label>
+              <label for="relief" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="relief" value="Disaster Relief">
+                <span class="checkmark"></span>
+                Disaster Relief
+              </label>
+              <label for="support" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="support" value="Refugee Support">
+                <span class="checkmark"></span>
+                Refugee Support
+              </label>
+              <label for="water" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="water" value="Clean Water">
+                <span class="checkmark"></span>
+                Clean Water
+              </label>
+              <label for="others" class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="others" value="Other Causes">
+                <span class="checkmark"></span>
+                Other Causes
+              </label>
+            </div>
+          </div>
+          <div class="payment-method">
+            <div class="payment-method__header">
+              payment method
+            </div>
+            <div class="payment-method__input">
+              <label for="card-payment">
+                <input type="radio" name="payment" id="card-payment" value="card">
+                Debit / Credit Card
+              </label>
+              <label for="bank-transfer">
+                <input type="radio" name="payment" id="bank-transfer" value="bank">
+                Bank Transfer
+              </label>
+            </div>
+            <div class="payment-details">
+              <!--Payment Dynamic Sections-->
+              <div id="card" class="method card-method">
+                <div class="card-method__input">
+                  <input type="text" name="cardholder-name" placeholder="Cardholder Name*" required>
+                  <input type="text" name="cardholder-number" placeholder="Cardholder Number*" required>
+                  <input type="date" name="expiration-date" placeholder="Expiry Date*" required>
+                  <input type="text" name="cvv" placeholder="CVV*" required>
+                </div>
+              </div>
+              <div id="bank" class="method bank-method">
+                <p><strong>Account Name:</strong> NewDawn Charity Foundation</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Bank Name:</strong> Denco Trust Bank</p>
+                <label for="reference">
+                  <input type="text" name="reference" id="reference" placeholder="Enter your name or transaction note*" required>
+                </label>
+                <label for="proof">Upload Payment Proof:</label>
+                <input type="file" name="proof" id="proof" accept="image/*,.pdf" required>
+                <button type="button" class="confirm-btn">
+                  <span>
+                    I’ve Made This Transfer
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="form-donate__btn">
+          <span>
+            donate now
+          </span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
