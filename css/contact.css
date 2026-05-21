@@ -111,8 +111,9 @@
   text-transform: uppercase;
 }
 .info__text p {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color) !important;
   font: normal 15px var(--primary-font);
+  text-decoration: none !important;
 }
 .contact-form__section h3 {
   color: var(--primary-text-color);

@@ -110,6 +110,10 @@
   color: var(--primary-text-color);
   font: normal 15px var(--primary-font);
 }
+.phone {
+  color: var(--primary-text-color) !important;
+  text-decoration: none !important;
+}
 .event-info {
   display: flex;
   flex-flow: column nowrap;
@@ -152,11 +156,13 @@
 .faq-btn {
   background-color: transparent;
   border: 2px solid var(--border-color);
+  color: var(--primary-text-color) !important;
   cursor: pointer;
   font: 500 18px var(--secondary-font);
   padding: var(--spacing-sm);
   position: relative;
   text-align: left;
+  text-decoration: none !important;
   width: 100%;
 }
 .faq-btn::after {

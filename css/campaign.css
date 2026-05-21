@@ -73,7 +73,12 @@
 
 /* Campaign Pagination */
 .pagination {
-  margin: var(--spacing-lg);
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+  justify-content: center;
+  margin: var(--spacing-lg) 0;
 }
 .pagination a {
   border-radius: 5px;
@@ -81,7 +86,6 @@
   color: var(--primary-text-color);
   font: 500 17px var(--primary-font);
   padding: var(--spacing-sm);
-  text-align: center;
   text-decoration: none;
   transition: var(--transition);
 }

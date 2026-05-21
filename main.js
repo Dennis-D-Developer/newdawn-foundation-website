@@ -117,27 +117,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //Location Map 
-const statusText = document.getElementById("map");
+const mapContainer = document.getElementById("map");
 
 window.addEventListener("load", () => {
+  // Check browser support
   if (!navigator.geolocation) {
-    statusText.textContent = "Geolocation not supported.";
+    mapContainer.innerHTML = "Geolocation is not supported by this browser.";
     return;
   }
 
-  navigator.geolocation.getCurrentPosition(success, error);
+  // Request location
+  navigator.geolocation.getCurrentPosition(
+    success,
+    error,
+    {
+      enableHighAccuracy: true,
+      timeout: 10000,
+      maximumAge: 0,
+    }
+  );
 });
 
 function success(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
 
+  // Clear fallback text/content
+  mapContainer.innerHTML = "";
+
+  // Initialize map
   const map = L.map("map").setView([lat, lng], 13);
 
+  // OpenStreetMap tiles
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap contributors",
+    attribution: "&copy; OpenStreetMap contributors",
   }).addTo(map);
 
+  // Marker
   L.marker([lat, lng])
     .addTo(map)
     .bindPopup("You are here 📍")
@@ -145,8 +161,29 @@ function success(position) {
 }
 
 function error(err) {
-  console.log(err);
-  statusText.textContent = "Location permission denied or unavailable.";
+  console.error("Geolocation error:", err);
+
+  switch (err.code) {
+    case err.PERMISSION_DENIED:
+      mapContainer.innerHTML =
+        "Location access was denied. Please allow location permission in your browser.";
+      break;
+
+    case err.POSITION_UNAVAILABLE:
+      mapContainer.innerHTML =
+        "Location information is unavailable.";
+      break;
+
+    case err.TIMEOUT:
+      mapContainer.innerHTML =
+        "Location request timed out.";
+      break;
+
+    default:
+      mapContainer.innerHTML =
+        "An unknown error occurred.";
+      break;
+  }
 }
 
 // Page Transition Loader
