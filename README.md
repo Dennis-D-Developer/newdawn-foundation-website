@@ -1,19 +1,19 @@
-NewDawn Charity Foundation – Frontend Project
+NEWDAWN CHARITY FOUNDATION - FRONTEND PROJECT
 
 NewDawn Charity Foundation is a responsive multi-page frontend website designed for a nonprofit organization focused on empowering communities through education, healthcare, humanitarian aid, and relief support for natural disaster and war-affected regions. This project was built to strengthen and showcase my frontend web development skills using HTML, CSS, and JavaScript. The website was structured to reflect a real-world charity organization, with emphasis on clean UI design, responsiveness across devices, accessibility, usability, and organized code structure.
 
 
-Live Website
+LIVE WEBSITE
 
 Netlify: https://newdawn-charity-foundation.netlify.app/ GitHub Pages: https://dennis-d-developer.github.io/newdawn-foundation-website/
 
 
-Source Code
+SOURCE CODE
 
 GitHub Repository: https://github.com/Dennis-D-Developer/newdawn-foundation-website
 
 
-About the Project
+ABOUT THE PROJECT
 
 NewDawn Charity Foundation is a responsive multi-page website representing a nonprofit organization dedicated to empowering communities through education, healthcare, humanitarian support, and relief for natural disaster and war-affected regions. It includes key sections such as:
   - Home
@@ -27,7 +27,7 @@ NewDawn Charity Foundation is a responsive multi-page website representing a non
 This project was built independently to improve my frontend development skills and gain hands-on experience creating a complete, structured, and responsive real-world charity website using HTML, CSS, and JavaScript.
 
 
-What I worked on
+WHAT I WORKED ON
 
  - Fully responsive design (mobile, tablet, desktop)
  - Multi-page navigation structure
@@ -36,7 +36,7 @@ What I worked on
  - Designing a consistent and user-friendly interface across pages
    
 
-Technologies Used
+TECHNOLOGIES USED
 
  - HTML5
  - CSS3
@@ -45,7 +45,7 @@ Technologies Used
  - Git and GitHub
 
    
-Project Structure 
+PROJECT STRUCTURE 
 
 newdawn-charity-foundation/
 │
@@ -62,12 +62,12 @@ newdawn-charity-foundation/
 └── img/
 
 
-What I Learned
+WHAT I LEARNED
 
 This project strengthened my skills in building responsive, multi-page websites and improved how I structure and organize frontend code. It also helped me get more comfortable with Git and GitHub for version control and deployment, while turning a concept into a fully working website with clean UI and consistent design.
 
 
-Author
+AUTHOR
 
 Dennis Uka
 
